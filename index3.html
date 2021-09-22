@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First assignments</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span> That</span></a>
+            <img id="mobile-cta" class="mobile-menu" src="./assets/images/menu.svg" alt="Open nevigation">
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="../assets/images/exit.svg" alt="close navigation">
+                <ul class="primary-nav">
+                    <li><a class ="current" href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">
+                    It's Nitty &amp; Gritty
+                </p>
+                <h1>A Task App Doesn't Stink</h1>
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="./assets/images/watch.svg" alt="watch a video"> Watch A Video</a>
+                </div>
+            </div>
+
+            <img src="./assets/images/illustration.svg" alt="illustration"
+            class="hero-img">
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>
+                    Unlimited Tasks
+                </li>
+                <li>
+                    SMS Task Reminders
+                </li>
+                <li>
+                    Confetti Explosions Upon Task Completions
+                </li>
+                <li>
+                    Social Media Announcements
+                </li>
+                <li>
+                    Real Time Collaboration
+                </li>
+                <li>
+                    Other Awesome Features
+                </li>
+                
+            </ul>
+            <img src="./assets/images/holding-phone.jpg" alt="man holding phone">
+        </div>
+    </section>
+
+
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./assets/images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vitae ad exercitationem vel porro. Quos dolorum non quam velit at? Ex eaque adipisci ipsa nam deleniti, accusantium exercitationem optio doloremque?
+                    </blockquote>
+                    <cite>
+                        Jane Doe
+                    </cite>
+                </li>
+                <li>
+                    <img src="./assets/images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vitae ad exercitationem vel porro. Quos dolorum non quam velit at? Ex eaque adipisci ipsa nam deleniti, accusantium exercitationem optio doloremque?
+                    </blockquote>
+                    <cite>
+                        Jane Doe
+                    </cite>
+                </li>
+                <li>
+                    <img src="./assets/images/person.jpg" alt="person">
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque vitae ad exercitationem vel porro. Quos dolorum non quam velit at? Ex eaque adipisci ipsa nam deleniti, accusantium exercitationem optio doloremque?
+                    </blockquote>
+                    <cite>
+                        Jane Doe
+                    </cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>
+                    Contact
+                </h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" >
+                    <label for="message">Massage</label>
+                    <textarea name="message" id="message" rows="10" cols="30"></textarea>
+
+                    <input type="submit" class="send-massage-cta" value="send message">
+
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.666500566651!2d90.37274761484663!3d23.794887384567463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7332d95e565%3A0x996a6f1d555346d5!2sMonipur%20High%20School%20And%20College%20Branch%20-%2003!5e0!3m2!1sen!2sbd!4v1632224666858!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const mobileBtn= document.getElementById('mobile-cta')
+            nav =document.querySelector('nav')
+            mobileBtnExit = document.getElementById('mobile-exit');
+        mobileBtn.addEventListener('click', ( ) =>{
+            nav.classList.add('menu-btn');
+        })
+        mobileBtnExit.addEventListener('click', ( ) =>{
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>
